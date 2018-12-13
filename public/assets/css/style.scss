@@ -1,0 +1,40 @@
+@import 'bootstrap';
+@import 'navbar-mini';
+@import 'messages';
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+
+    & > :first-child {
+        margin-top: 0;
+    }
+
+    & > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 1rem 0;
+    font-size: $font-size-base * .85;
+
+    .list-inline .list-inline-item {
+        margin-right: .5em;
+
+        &:after {
+            margin-left: .5em;
+            content: "•";
+        }
+
+        &:last-of-type:after {
+            margin-left: 0;
+            content: "";
+        }
+    }
+}

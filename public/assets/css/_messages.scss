@@ -1,0 +1,16 @@
+#messages {
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    .alert p {
+        margin-bottom: 0;
+    }
+
+    .flash:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .alert-error {
+        @extend .alert-danger;
+    }
+}

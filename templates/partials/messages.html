@@ -1,0 +1,16 @@
+
+{% if messages | length %}
+<div id="messages" class="container">
+    <div class="row">
+        <div class="col">
+            {% for type, alerts in messages %}
+                <div class="flash alert alert-{{ type }}">
+                    {% for alert in alerts %}
+                    <p>{{ alert }}</p>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}

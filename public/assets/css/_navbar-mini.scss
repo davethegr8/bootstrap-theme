@@ -1,0 +1,20 @@
+
+.navbar-mini {
+    font-size: $font-size-base * .65;
+    padding: .25rem 1rem;
+
+    .navbar-brand {
+        font-size: inherit;
+        letter-spacing: -1px;
+        margin-right: .5rem;
+        padding: .2rem .35rem;
+
+        border: 1px solid hsla(0, 100%, 100%, .5);
+        border-radius: .25rem;
+    }
+
+    .navbar-nav .nav-link {
+        padding-top: .2rem;
+        padding-bottom: .2rem;
+    }
+}

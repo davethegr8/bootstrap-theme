@@ -1,0 +1,17 @@
+// import functions to use things like theme-color()
+@import '../../../node_modules/bootstrap/scss/_functions.scss';
+
+// define custom variables here
+@import 'variables';
+
+// import core bootstrap lib
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+// now custom rules to override bootstrap
+ol,
+ul,
+dl {
+  padding-left: $font-size-base * 2.5;
+  margin-top: 0;
+  margin-bottom: $font-size-base * 1;
+}
