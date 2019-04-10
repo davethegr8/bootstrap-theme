@@ -1,7 +1,70 @@
-{% extends "layouts/default.html" %}
+{% extends 'layouts/default.html' %}
 
 {% block main %}
-index.html
+<div class="content">
+    <div class="container pt-4">
+        <h1>bootstrap theme</h1>
 
-{{ title }}
+        <p class="lead">common settings & adjustments I make to bootstrap in almost every project</p>
+
+        <h2>what's included</h2>
+
+        - live view of styles
+        - header / main / footer layout takes up min 100% of view height
+        - all fonts scale based on <code>$font-size-base</code>
+
+        {% include 'sections/content.html' %}
+
+        Content
+            Typography
+            Code
+            Images
+            Tables
+            Figures
+
+
+        Components
+            Alerts
+            Badge
+            Breadcrumb
+            Buttons
+            Button Group
+            Card
+            Carousel
+            Collapse
+            Dropdowns
+            Forms
+            Input Group
+            Jumbotron
+            List Group
+            Modal
+            Navs
+            Navbar
+            Pagination
+            Popovers
+            Progress
+            Scrollspy
+            Tooltips
+
+        Utilities
+            Borders
+            Clearfix
+            Close Icon
+            Colors
+            Display
+            Embed
+            Flex
+            Float
+            Image Replacement
+            Position
+            Screenreaders
+            Shadows
+            Sizing
+            Spacing
+            Text
+            Vertical Align
+            Visibility
+
+    </div>
+</div>
 {% endblock %}

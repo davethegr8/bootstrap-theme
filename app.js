@@ -23,7 +23,7 @@ var sessionStore = new session.MemoryStore;
 app.set('config', {
   "root": "",
   "env": app.get('env'),
-  "project": "Project Template",
+  "project": "Bootstrap Theme",
   "version": "v1",
   "repo": "http://example.com"
 });
