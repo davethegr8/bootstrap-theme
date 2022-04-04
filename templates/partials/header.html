@@ -6,31 +6,20 @@
 </div>
 {% endif %}
 
-<header class="bg-primary" >
-    <nav class="navbar navbar-expand-sm navbar-dark navbar-mini bg-dark text-white" role="navigation">
-        <a class="navbar-brand" href="/">TE</a>
-
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="/">Team</a>
-            </li>
-        </ul>
-
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fa fa-user"></i> User</a>
-            </li>
-        </ul>
-    </nav>
-
+<header class="bg-primary">
     <nav class="navbar navbar-expand-sm navbar-dark" role="navigation">
-        {# <a class="navbar-brand" href="{{ config.root }}/">
-            <img src="{{ config.root }}/assets/images/bigfish/logo-80.png" />
-        </a> #}
+        {#
+        <a class="navbar-brand" href="{{ config.root }}/">
+          <img src="{{ config.root }}/assets/images/logo-80.png" />
+        </a>
+        #}
 
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="{{ config.root }}/">{{ config.project }}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ config.root }}/typography">Typography</a>
             </li>
         </ul>
 

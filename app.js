@@ -3,10 +3,6 @@ const expressNunjucks = require('express-nunjucks');
 const nunjucks = require('nunjucks');
 
 const path = require('path');
-const cookieParser = require('cookie-parser');
-var session = require('express-session');
-var flash = require('express-flash');
-
 const logger = require('morgan');
 
 const sassMiddleware = require('node-sass-middleware');
@@ -18,7 +14,6 @@ var parseUrlencoded = bodyParser.urlencoded({ extended: true });
 const indexRouter = require('./routes/index');
 
 const app = express();
-var sessionStore = new session.MemoryStore;
 
 app.set('config', {
   "root": "",
@@ -48,15 +43,6 @@ njk.env.addGlobal('config', app.get('config'));
 app.use(logger('tiny'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-
-app.use(session({
-    cookie: { maxAge: 1e3 * 60 * 60 * 24 },
-    store: sessionStore,
-    saveUninitialized: true,
-    resave: true,
-    secret: "secret"
-}));
-app.use(flash());
 
 app.use(sassMiddleware({
   src: path.join(__dirname, 'public'),
